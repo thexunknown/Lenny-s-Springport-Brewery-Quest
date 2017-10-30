@@ -1,0 +1,186 @@
+SelectMission("m1sd");
+
+SetMissionResetPlayerOutCar("lenstart","carstart");
+SetDynaLoadData("l3z2.p3d;l3z3.p3d;l3z4.p3d;l3r3.p3d;l3r2.p3d;");
+
+SetInitialWalk("lenwalk");
+
+AddStage();
+	SetStageMessageIndex(17);
+	SetHUDIcon("hype");
+	AddStageVehicle("famil_v", "hom_car", "NULL", "Missions\level01\M5evade.con");
+	AddObjective("goto");
+	    AddNPC("homer", "homersd");
+        SetDestination("hype", "carsphere");
+		SetCollectibleEffect("wrench_collect");
+	CloseObjective();
+CloseStage();
+
+AddStage();
+	RESET_TO_HERE();
+	SetStageMessageIndex(29);
+	SetHUDIcon("homer");
+	AddObjective("talkto");
+	    AddNPC("homer", "homersd");
+		AddObjectiveNPCWaypoint("homer", "homer_walk1");
+		AddObjectiveNPCWaypoint("homer", "homer_walk1");
+		SetTalkToTarget("homer", 0, 0);
+	CloseObjective();
+CloseStage();
+//dialog1
+AddStage();
+    StartCountdown("count");
+    AddToCountdownSequence( " ", 1000 );
+	AddToCountdownSequence( " ", 1000 );
+	AddToCountdownSequence( " ", 1000 );
+	SetStageMessageIndex(1);
+	SetHUDIcon("lenny"); //load
+	AddObjective("timer");
+	    SetDurationTime(3);
+	CloseObjective();
+CloseStage();
+//dialog2
+AddStage();
+    StartCountdown("count");
+    AddToCountdownSequence( " ", 1000 );
+	AddToCountdownSequence( " ", 1000 );
+	AddToCountdownSequence( " ", 1000 );
+	SetStageMessageIndex(2);
+	SetHUDIcon("lenny"); //load
+	AddObjective("timer");
+	    SetDurationTime(3);
+	CloseObjective();
+CloseStage();
+//dialog3
+AddStage();
+    StartCountdown("count");
+    AddToCountdownSequence( " ", 1000 );
+	AddToCountdownSequence( " ", 1000 );
+	AddToCountdownSequence( " ", 1000 );
+	SetStageMessageIndex(3);
+	SetHUDIcon("homer"); //load
+	AddObjective("timer");
+	    SetDurationTime(3);
+	CloseObjective();
+CloseStage();
+//dialog4
+AddStage();
+    StartCountdown("count");
+    AddToCountdownSequence( " ", 1000 );
+	AddToCountdownSequence( " ", 1000 );
+	AddToCountdownSequence( " ", 1000 );
+	SetStageMessageIndex(4);
+	SetHUDIcon("lenny"); //load
+	AddObjective("timer");
+	    SetDurationTime(3);
+	CloseObjective();
+CloseStage();
+//dialog5
+AddStage();
+    StartCountdown("count");
+    AddToCountdownSequence( " ", 1000 );
+	AddToCountdownSequence( " ", 1000 );
+	AddToCountdownSequence( " ", 1000 );
+	SetStageMessageIndex(5);
+	SetHUDIcon("homer"); //load
+	AddObjective("timer");
+	    SetDurationTime(3);
+	CloseObjective();
+CloseStage();
+//dialog6
+AddStage();
+    StartCountdown("count");
+    AddToCountdownSequence( " ", 1000 );
+	AddToCountdownSequence( " ", 1000 );
+	AddToCountdownSequence( " ", 1000 );
+	SetStageMessageIndex(6);
+	SetHUDIcon("homer"); //load
+	AddObjective("timer");
+	    SetDurationTime(3);
+	CloseObjective();
+CloseStage();
+//dialog7
+AddStage();
+    StartCountdown("count");
+    AddToCountdownSequence( " ", 1000 );
+	AddToCountdownSequence( " ", 1000 );
+	AddToCountdownSequence( " ", 1000 );
+	SetStageMessageIndex(7);
+	SetHUDIcon("lenny"); //load
+	AddObjective("timer");
+	    SetDurationTime(3);
+	CloseObjective();
+CloseStage();
+//dialog8
+AddStage();
+    StartCountdown("count");
+    AddToCountdownSequence( " ", 1000 );
+	AddToCountdownSequence( " ", 1000 );
+	AddToCountdownSequence( " ", 1000 );
+	SetStageMessageIndex(8);
+	SetHUDIcon("lenny"); //load
+	AddObjective("timer");
+	    SetDurationTime(3);
+	CloseObjective();
+CloseStage();
+//dialog9
+AddStage();
+    StartCountdown("count");
+    AddToCountdownSequence( " ", 1000 );
+	AddToCountdownSequence( " ", 1000 );
+	AddToCountdownSequence( " ", 1000 );
+	SetStageMessageIndex(9);
+	SetHUDIcon("homer"); //load
+	AddObjective("timer");
+	    SetDurationTime(3);
+	CloseObjective();
+CloseStage();
+//dialog10
+AddStage();
+    StartCountdown("count");
+    AddToCountdownSequence( " ", 1000 );
+	AddToCountdownSequence( " ", 1000 );
+	AddToCountdownSequence( " ", 1000 );
+	SetStageMessageIndex(10);
+	SetHUDIcon("homer"); //load
+	AddObjective("timer");
+	    SetDurationTime(3);
+	CloseObjective();
+CloseStage();
+//dialog11
+AddStage();
+    StartCountdown("count");
+    AddToCountdownSequence( " ", 1000 );
+	AddToCountdownSequence( " ", 1000 );
+	AddToCountdownSequence( " ", 1000 );
+	SetStageMessageIndex(11);
+	SetHUDIcon("lenny"); //load
+	AddObjective("timer");
+	    SetDurationTime(3);
+	CloseObjective();
+CloseStage();
+//dialog12
+AddStage();
+    StartCountdown("count");
+    AddToCountdownSequence( " ", 1000 );
+	AddToCountdownSequence( " ", 1000 );
+	AddToCountdownSequence( " ", 1000 );
+	SetStageMessageIndex(12);
+	SetHUDIcon("homer"); //load
+	AddObjective("timer");
+	    SetDurationTime(3);
+	CloseObjective();
+CloseStage();
+//dialogfinale
+AddStage();
+    StartCountdown("count");
+    AddToCountdownSequence( " ", 1000 );
+	AddToCountdownSequence( " ", 1000 );
+	AddToCountdownSequence( " ", 1000 );
+	SetStageMessageIndex(13);
+	SetHUDIcon("lenny"); //load
+	SetPresentationBitmap( "art/frontend/dynaload/images/mis01_01.p3d" );
+	AddObjective("timer");
+	    SetDurationTime(3);
+	CloseObjective();
+CloseStage();

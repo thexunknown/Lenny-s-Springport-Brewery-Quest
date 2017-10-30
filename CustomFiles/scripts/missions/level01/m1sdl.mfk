@@ -1,0 +1,10 @@
+LoadP3DFile("art\lgui\hype.p3d");
+LoadP3DFile("art\lgui\curator.p3d");
+LoadP3DFile("art\lgui\donuto.p3d");
+LoadP3DFile("art\lgui\donutv.p3d");
+LoadP3DFile("art\lgui\lenny.p3d");
+LoadP3DFile("art\lgui\homer.p3d");
+LoadP3DFile("art\lgui\duffb.p3d");
+LoadP3DFile("art\missions\level01\m1.p3d");
+
+LoadDisposableCar("art\cars\famil_v.p3d", "famil_v", "AI");

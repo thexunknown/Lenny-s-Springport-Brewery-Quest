@@ -1,0 +1,270 @@
+SelectMission("m1");
+
+SetMissionResetPlayerInCar("carstart");
+SetDynaLoadData("l3z2.p3d;l3z3.p3d;l3z4.p3d;l3r3.p3d;l3r2.p3d;");
+
+UsePedGroup(0);
+
+AddStage();
+    SetStageMessageIndex(20);
+	AddStageVehicle("famil_v", "hom_car", "NULL", "Missions\level01\M5evade.con");
+	AddObjective("getin");
+	   SetObjTargetVehicle("current");
+	CloseObjective();
+CloseStage();
+
+AddStage(0);
+	//SetMaxTraffic(3);
+	//SetStageMessageIndex(176);
+	//SetHUDIcon( "android" );
+	AddObjective("interior");
+		SetDestination("Android");
+	CloseObjective();
+CloseStage();
+
+AddStage();
+	AddObjective("goto");
+		SetDestination("sho", "triggersphere");
+		SetCollectibleEffect("wrench_collect");
+	CloseObjective();
+CloseStage();
+
+AddStage();
+    RESET_TO_HERE();
+	SetStageMessageIndex(9);
+	SetHUDIcon("duffb");
+	AddStageVehicle("cCurator", "cur_car", "NULL", "Missions\level01\M0race.con", "mobstr"); //LOAD CAR, CREATE custom VEHICLE STATS
+	AddObjective("goto");
+	    SetDestination("duffb", "carsphere");
+		SetCollectibleEffect("wrench_collect");
+	CloseObjective();
+	StageStartMusicEvent("M1_start");
+    SetStageTime(55);
+	AddCondition("timeout");
+	CloseCondition();
+CloseStage();
+
+AddStage();
+	SetStageMessageIndex(10); 
+	SetHUDIcon("bowlo");
+	ActivateVehicle("cCurator", "NULL", "race");
+	AddStageWaypoint("cur_path1");
+	AddStageWaypoint("cur_path2");
+	AddStageWaypoint("cur_path3");
+	AddStageWaypoint("cur_path4");
+	AddStageWaypoint("cur_path5");
+	StageStartMusicEvent("M1_start");
+	AddObjective("race", "both");
+	    AddCollectible("racecheck1", "carsphere");
+		AddCollectible("racecheck2", "carsphere");
+		AddCollectible("racecheck3", "carsphere");
+		AddCollectible("racefinish", "carsphere");
+		SetCollectibleEffect("wrench_collect");
+	CloseObjective();
+	AddCondition("outofvehicle");
+	   SetCondTime( 10000 );
+	CloseCondition();
+	AddCondition("race");
+	   SetCondTargetVehicle("cCurator");
+	CloseCondition();
+	SetFadeOut(1.0);
+	ShowStageComplete();
+CloseStage(); //When you finish the race successfully the screen fades to black and you spawn facing the curator, car will be spawned too.
+
+AddStage();
+    AddStageCharacter("lenny", "len_loc", "", "current", "lencar_loc");
+	AddStageVehicle("cCurator", "curcar_loc", "NULL", "Missions\level01\m0race.con");
+	SetHUDIcon("curator");
+	SetStageMessageIndex(18);
+	AddObjective("talkto");
+	   AddNPC("mobstr", "cur_loc");
+	   AddObjectiveNPCWaypoint("mobstr", "cur_walk");
+	   AddObjectiveNPCWaypoint("mobstr", "cur_walk2");
+	   SetTalkToTarget("mobstr", 0, 0);
+	   RemoveDriver("mobstr");
+	CloseObjective();
+CloseStage(); 
+
+AddStage();
+    StartCountdown("count");
+    AddToCountdownSequence( " ", 3000 );
+	SetStageMessageIndex(13);
+	SetHUDIcon("lenny"); //load
+	AddObjective("timer");
+	    SetDurationTime(3);
+	CloseObjective();
+CloseStage();
+
+AddStage();
+    StartCountdown("count");
+    AddToCountdownSequence( " ", 3000 );
+	SetStageMessageIndex(14);
+	SetHUDIcon("curator"); //load
+	AddObjective("timer");
+	    SetDurationTime(3);
+	CloseObjective();
+CloseStage();
+
+AddStage();
+    StartCountdown("count");
+    AddToCountdownSequence( " ", 3000 );
+	SetStageMessageIndex(15);
+	SetHUDIcon("curator"); //load 
+	AddObjective("timer");
+	    SetDurationTime(3);
+	CloseObjective();
+CloseStage();
+
+AddStage();
+    SetStageMessageIndex(20);
+	AddObjective("getin");
+	   AddNPC("mobstr", "cur_loc");
+	   SetObjTargetVehicle("current");
+	CloseObjective();
+CloseStage();
+
+AddStage();
+	SetStageMessageIndex(11);
+	SetHUDIcon("donutv");
+	AddStageVehicle("cDonut", "donutc_sd", "NULL", "Missions\level01\M1race.con", "moleman");
+	AddObjective("goto");
+	    SetDestination("donuttrig", "triggersphere");
+        MustActionTrigger();	
+	CloseObjective();
+	SetStageTime(20);
+	AddCondition("timeout");
+	CloseCondition();
+CloseStage();
+
+AddStage();
+    SetStageMessageIndex(12);
+	SetHUDIcon("donuto");
+	ActivateVehicle("cDonut", "NULL", "target");
+	AddStageWaypoint("donutpath1");
+	AddStageWaypoint("donutpath2");
+	AddStageWaypoint("donutpath3");
+	AddStageWaypoint("donutpath4");
+	AddStageWaypoint("duffb");
+	AddStageWaypoint("hype");
+	StageStartMusicEvent("M1_start");
+	AddObjective("dump");
+	    SetObjTargetVehicle("cDonut");
+		AddCollectible("item1", "donut"); //1
+		AddCollectible("item2", "donut");
+		AddCollectible("item3", "donut");
+		AddCollectible("item4", "donut");
+		AddCollectible("item5", "donut");
+		AddCollectible("item6", "donut");
+		AddCollectible("item7", "donut");
+		AddCollectible("item8", "donut");
+		AddCollectible("item9", "donut");
+	    AddCollectible("item11", "donut");
+		AddCollectible("item12", "donut");
+		AddCollectible("item13", "donut");
+		SetCollectibleEffect("wrench_collect");
+	CloseObjective();
+    SetStageTime(120);
+	AddCondition("timeout");
+	CloseCondition();
+	AddCondition( "followdistance" );
+       SetFollowDistances(0, 150);
+       SetCondTargetVehicle("cDonut");
+    CloseCondition();
+	ShowStageComplete();
+CloseStage();
+
+AddStage();
+	SetStageMessageIndex(21);
+	SetHUDIcon("lenny"); 
+	AddObjective("timer");
+	    SetDurationTime(3);
+	CloseObjective();
+CloseStage();
+
+AddStage();
+    SetStageMessageIndex(22);
+	SetHUDIcon("bowlo");
+	AddStageVehicle("cCurator", "curcar_loc", "NULL", "Missions\level01\m0race.con");
+	AddObjective("goto");
+	    AddNPC("mobstr", "cur_loc");
+		SetDestination("racefinish", "carsphere");
+		SetCollectibleEffect("wrench_collect");
+		RemoveDriver("mbstr");
+	CloseObjective();
+	AddCondition("outofvehicle");
+	   SetCondTime( 10000 );
+	CloseCondition();
+CloseStage();
+
+AddStage();
+	SetHUDIcon("curator");
+	SetStageMessageIndex(18);
+	AddObjective("talkto");
+	   AddNPC("mobstr", "cur_loc");
+	   AddObjectiveNPCWaypoint("mobstr", "cur_walk");
+	   AddObjectiveNPCWaypoint("mobstr", "cur_walk2");
+	   SetTalkToTarget("mobstr", 0, 0);
+	CloseObjective();
+CloseStage();
+
+AddStage();
+	StartCountdown("count");
+    AddToCountdownSequence( " ", 3000 );
+	SetStageMessageIndex(23);
+	SetHUDIcon("curator"); 
+	AddObjective("timer");
+	    SetDurationTime(3);
+	CloseObjective();
+CloseStage();
+
+AddStage();
+	StartCountdown("count");
+    AddToCountdownSequence( " ", 3000 );
+	SetStageMessageIndex(24);
+	SetHUDIcon("lenny"); 
+	AddObjective("timer");
+	    SetDurationTime(3);
+	CloseObjective();
+CloseStage();
+
+AddStage();
+	StartCountdown("count");
+    AddToCountdownSequence( " ", 3000 );
+	SetStageMessageIndex(25);
+	SetHUDIcon("curator"); 
+	AddObjective("timer");
+	    SetDurationTime(3);
+	CloseObjective();
+CloseStage();
+
+AddStage();
+	StartCountdown("count");
+    AddToCountdownSequence( " ", 3000 );
+	SetStageMessageIndex(26);
+	SetHUDIcon("lenny"); 
+	AddObjective("timer");
+	    SetDurationTime(3);
+	CloseObjective();
+CloseStage();
+
+AddStage();
+	StartCountdown("count");
+    AddToCountdownSequence( " ", 3000 );
+	SetStageMessageIndex(27);
+	SetHUDIcon("curator"); 
+	AddObjective("timer");
+	    SetDurationTime(3);
+	CloseObjective();
+CloseStage();
+
+AddStage("final");
+	StartCountdown("count");
+    AddToCountdownSequence( " ", 3000 );
+	SetStageMessageIndex(28);
+	SetHUDIcon("curator"); 
+	AddObjective("timer");
+	    SetDurationTime(3);
+	CloseObjective();
+CloseStage();
+
+CloseMission();

@@ -1,0 +1,6 @@
+-Level 3 Map set to L1
+-Lenny as char
+-Reskinned Brown Moe Sedan as Default vehicle
+-Revamped GUI with Duff Beer Can as loading icon and mod icon
+-Red Bordered GUI
+

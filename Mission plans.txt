@@ -1,0 +1,88 @@
+
+
+m0: Race the Curator
+
+-Drive to Planet Hype
+-Talk to Homer (Planet Hype)
+-Dialog blah blah:
+L: Hey Homer!, how-come you're down here so early.
+H: Marge has just completely abandoned me. 
+H: But nevermind. What's your problem anyway?
+L: Well my ticket for the Duff Brewery has gone missing or been stolen
+H: Damn, that really sucks.
+H: You should find the curator, he could fix a thing or two for you.
+H: He'll be at the Brewery closing up soon i think.
+H: He likes to go bowling after his shifts.
+- Presentation Bitmap
+( Race the Duff Factories Curator to the Bowlorama, who knows he could perhaps help you with your incident)
+---------------------------------------------MISSION BEGINS!
+
+-Get in your vehicle (Outside planet hype)
+- Drive to the Duff Brewery 
+- Look! The Curator! better get to the Bowlorama before he does.
+- Talk to the Curator
+
+- Dialogue:
+L: Hey Mr Curator, i'd like to just speak a second with you.
+C: Shove off stranger. 
+C: I'll only talk if something good is up for grabs.
+
+- Seems like he isn't the talkative type, maybe bribery will work.
+- Find a Donut Truck...
+- Hit and Collect all 10 Donuts w/ follow condition and timeout condition
+- Deliver it to the Curator
+
+- Dialogue:
+C: Oh boy are these delicious! 
+C: Anyway your enquiry was?
+L: I lost my Duff Ticket, or at-least I think I lost it.
+C: Ah okay.. Maybe you can go to the Androids Dungeon.
+C: That fat nerd sells spare tickets.
+L: But i'm broke, have you seen the state of my car!
+C: Well if you need a new ride speak to Gil.
+C: But that's when you've got the cash.
+L: Alright thanks anyway.
+//missioncomplete
+
+m1: the hick who knew too much
+
+-Drive to the KrustyLu
+-Talk to Cletus
+-Dialog:
+L: Hey Cletus!, collecting stuff for this years harvest?
+C: Tarn't you clever cityslicker!.
+C: I heardz about you losin' those "coopons" whatever you rich folk call em'
+C: Tell ya b'waht city boy, you help me collect stuff for the harvest
+C: Then i can pay you in Benjamins. Then ya can go to your drink factory hehe.
+C: I think i may know who'z stolen your "coopon" thang too.
+----------------------MISSION BEGINS----FORCED CAR-----------------------
+- Collect all 20 Ketchup Packets (1:50)
+- Find a Donut Truck 
+- Hit and Collect 10 Donuts
+- Drive to the Theater
+- Lose the Police (2 chase cars: Wiggu_v and cpolice)
+- Drive to the Theater
+- Collect the trash cans with food inside (6/6)
+- Swap locators and talk outside the theater with cletus
+- Dialog:
+C: Here ya go city boy, here's ya "benjuhminz"
+C: If you need more work, call me on them magic talk-boxes
+L: Okay.....
+//missioncomplete
+
+m2: Marge in Charge
+
+-Drive to the Krusty Burger
+-Order some food (triggersphere at door)
+-------------MISSION BEGINS-------------------------------------------------
+-Monologue:
+L: Wait what! what's marge doing here?
+-Follow Marge's Vehicle (headed to the motel beside the observatory)
+-Talk to Marge (dialog)
+-Collect her items left outside her old motel
+-Drive back to the motel beside the observatory
+-DIALOG blah blah
+
+
+
+

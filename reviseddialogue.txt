@@ -1,0 +1,44 @@
+[Coding]
+Lenny = L
+Homer = H
+Curator = C
+Moleman = MM
+Mission Objective = MO
+**** = words i can't think of
+() = Context/Character's thoughts 
+
+[Mission 1]
+(Lenny arrives at the springport, and talks to homer about his mysterious stolen ticket.)
+MO: Talk to Homer.
+L: Hey Homer! Thought I'd never see 'ya down here so early. Anything moving your gears then?
+H: Nothing's moving my gears right now, they've malfunctioned!
+L: Huh? Why's that? Something bothering 'ya?
+H: Well, I've always had these voices in my head telling me stuff that I couldn't figure out because it was all some kind of complicated mess. However, only recently when I came to turn with what the voices were saying to me all these years, I realised they were trying to tell me my wife has gone missing!
+L: Hold on Homer, for years you didn't realise Marge had abandoned you a long time ago?
+H: What? No she hasn't, I last spoke to her yesterday while I was binging the football! Unless that was the inspector...
+L: Well, wish I could help 'ya with it, but I got my own problems. My ticket to the Duff Brewery Tour's been stolen.
+H: What?! No one's love for beer should be messed with! That's outrageous! Listen Lenny, maybe you could find a lawyer or someone like that to deal with this mess.
+L: Homer, How'dya know if there's any lawyers around this area anyways?!
+H: I saw one drive to the brewery just a minute ago... as I handed my ticket in and left the place.
+L: You're attending too? That does it! I'm not gonna sit here alone while my friends are having a good time!
+
+(Mission Briefing)
+MO: Drive to the Duff Brewery.
+MO: The curator's leaving! Follow him until he stops somewhere.
+MO: Talk to the curator.
+L: Sir! I need to speak with you about something, it's urgent!
+C: Christ, another ******? Look pal, it's been a long day for me of sorting *****'s problems out and you're no different from the rest of them. It's a rare opportunity a curator actually gets a break and even rarer that they'll be given free food for their crippling work. Now back away and let me enjoy my evening!
+L: (Sounds like he's had a rough day. Well, I'd better make the anticipated legend come true!)
+MO: Find a place for food. Anything will do as long as he gets it free!
+
+MO: That Donut Truck looks good. Order some donuts from the truck.
+L: Yeah, I'd like to order two #9's and a #6 with extra dip.
+MM: That'll be $10.57 sir... Oh no! I haven't payed rent in 8 months!
+MO: Uh oh, this doesn't look good. Get in your vehicle!
+MO: He's getting away! Hit his van to collect the donuts!
+MO: Drive to the bowlorama.
+
+MO: Talk to the curator.
+L: Well, any second thoughts sir?
+C: Oh my god, #6's with dip! These are my favourite! Mmmm... good stuff. Now, what exactly was your problem again?
+L:
